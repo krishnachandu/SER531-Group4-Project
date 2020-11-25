@@ -1,6 +1,6 @@
 # SER531-Group4-Project
 
-- Two of fuseki servers are deployed on 2 google cloud instances and other is running on AWS Instance.
+- Two of fuseki servers are deployed on google cloud instances and other is running on AWS Instance.
 - Please ensure all the three Fuseki servers are up and running hosting Data triples.
 
 
