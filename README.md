@@ -25,5 +25,11 @@
 - The server will be running on  the port 8080
 
 
-## Setting up front end goes here
--  --
+## Setting up the Frontend 
+-  Navigate to FrontEnd folder and run the below commands
+```
+yarn install
+```
+```
+yarn start
+```
