@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "a0b264c7-17fc-47f3-bc70-0c7753235daf",
+		"name": "Movie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getDirectorMovieInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/getDirectorMovieInfo?name=\"Sam Raimi\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getDirectorMovieInfo"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "\"Sam Raimi\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovieWithMinRating",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/getMovieWithMinRating?rating=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getMovieWithMinRating"
+					],
+					"query": [
+						{
+							"key": "rating",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovieInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/getMovieInfo?name=\"Spectre\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getMovieInfo"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "\"Spectre\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

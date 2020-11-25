@@ -1,0 +1,124 @@
+Sample Request:
+
+http://localhost:8080/getMovieWithMinRating?rating=6
+
+Response:
+
+{
+    "data": [
+        {
+            "movie": "Avatar ",
+            "id": 1
+        },
+        {
+            "movie": "Pirates of the Caribbean: At World's End ",
+            "id": 2
+        },
+        {
+            "movie": "Spectre ",
+            "id": 3
+        },
+        {
+            "movie": "The Dark Knight Rises ",
+            "id": 4
+        },
+        {
+            "movie": "Star Wars: Episode VII - The Force Awakens             ",
+            "id": 5
+        },
+        {
+            "movie": "John Carter ",
+            "id": 6
+        },
+        {
+            "movie": "Spider-Man 3 ",
+            "id": 7
+        },
+        {
+            "movie": "Tangled ",
+            "id": 8
+        },
+        {
+            "movie": "Avengers: Age of Ultron ",
+            "id": 9
+        },
+        {
+            "movie": "Harry Potter and the Half-Blood Prince ",
+            "id": 10
+        },
+        {
+            "movie": "Batman v Superman: Dawn of Justice ",
+            "id": 11
+        },
+        {
+            "movie": "Superman Returns ",
+            "id": 12
+        },
+        {
+            "movie": "Quantum of Solace ",
+            "id": 13
+        },
+        {
+            "movie": "Pirates of the Caribbean: Dead Man's Chest ",
+            "id": 14
+        },
+        {
+            "movie": "The Lone Ranger ",
+            "id": 15
+        },
+        {
+            "movie": "Man of Steel ",
+            "id": 16
+        },
+        {
+            "movie": "The Chronicles of Narnia: Prince Caspian ",
+            "id": 17
+        },
+        {
+            "movie": "The Avengers ",
+            "id": 18
+        },
+        {
+            "movie": "Pirates of the Caribbean: On Stranger Tides ",
+            "id": 19
+        },
+        {
+            "movie": "Men in Black 3 ",
+            "id": 20
+        },
+        {
+            "movie": "The Hobbit: The Battle of the Five Armies ",
+            "id": 21
+        },
+        {
+            "movie": "The Amazing Spider-Man ",
+            "id": 22
+        },
+        {
+            "movie": "Robin Hood ",
+            "id": 23
+        },
+        {
+            "movie": "The Hobbit: The Desolation of Smaug ",
+            "id": 24
+        }
+    ],
+    "graph": [
+        {
+            "x": "6",
+            "y": "1811"
+        },
+        {
+            "x": "7",
+            "y": "1450"
+        },
+        {
+            "x": "8",
+            "y": "319"
+        },
+        {
+            "x": "9",
+            "y": "9"
+        }
+    ]
+}

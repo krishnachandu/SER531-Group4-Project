@@ -1,0 +1,23 @@
+APi Request:
+
+http://localhost:8080/getMovieInfo?name="Spectre"
+
+
+Sample Response:
+
+{
+    "country": "UK",
+    "imdblink": "http://www.imdb.com/title/tt2379713/?ref_=fn_tt_tt_1",
+    "numusers": "994",
+    "director": "Sam Mendes",
+    "mid": "3",
+    "language": "English",
+    "title": "Spectre ",
+    "imdbscore": "6.8",
+    "duration": "148",
+    "actor3": "Stephanie Sigman",
+    "actor2": "Rory Kinnear",
+    "actor1": "Christoph Waltz",
+    "genre": "Action|Adventure|Thriller",
+    "numvoted": "275868"
+}

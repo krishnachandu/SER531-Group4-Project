@@ -1,0 +1,56 @@
+Sample Request:
+
+http://localhost:8080/getDirectorMovieInfo?name="Sam Raimi"
+
+Response:
+
+[
+    {
+        "movie": "Spider-Man 3 ",
+        "id": 1
+    },
+    {
+        "movie": "Spider-Man 2 ",
+        "id": 2
+    },
+    {
+        "movie": "Oz the Great and Powerful ",
+        "id": 3
+    },
+    {
+        "movie": "Spider-Man ",
+        "id": 4
+    },
+    {
+        "movie": "For Love of the Game ",
+        "id": 5
+    },
+    {
+        "movie": "The Quick and the Dead ",
+        "id": 6
+    },
+    {
+        "movie": "Drag Me to Hell ",
+        "id": 7
+    },
+    {
+        "movie": "A Simple Plan ",
+        "id": 8
+    },
+    {
+        "movie": "Army of Darkness ",
+        "id": 9
+    },
+    {
+        "movie": "Spider-Man 3 ",
+        "id": 10
+    },
+    {
+        "movie": "Evil Dead II ",
+        "id": 11
+    },
+    {
+        "movie": "Oz the Great and Powerful ",
+        "id": 12
+    }
+]
