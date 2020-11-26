@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/imdb/mve.owl#"
+     xml:base="http://www.semanticweb.org/imdb/mve.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:movie="http://www.semanticweb.org/imdb">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/imdb/mve.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/has_duration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_duration_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Duration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/has_genres -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_genres">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_genre_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Genres"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/has_language -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_language">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_language_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/has_release_country -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_release_country">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_release_country_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/has_title -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_title_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Title"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/has_year -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_year_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_duration_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_duration_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Duration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_genre_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_genre_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Genres"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_language_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_language_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Language"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_release_country_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_release_country_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_title_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_title_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Title"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_year_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_year_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Year"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Duration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Genres"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_language">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_release_country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_release_country">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_release_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_release_year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Year"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/is_title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/mve.owl/Country">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_release_country_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/Duration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/mve.owl/Duration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_duration_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/Genres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/mve.owl/Genres">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_genre_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/mve.owl/Language">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_language_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/Movie_id -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/mve.owl/Movie_id">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/has_duration"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/has_genres"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Genres"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/has_language"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/has_release_country"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/has_title"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Title"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/has_year"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Year"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/Title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/mve.owl/Title">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_title_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/mve.owl/Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/mve.owl/Year">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/mve.owl/is_year_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/Duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/Genres"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/Movie_id"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/Title"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/Year"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_genres"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_release_country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_title"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_year"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_genres"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_release_country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_title"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/has_year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_duration_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_genre_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_language_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_release_country_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_title_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_year_of"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_id"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_release_country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_release_year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/mve.owl/is_title"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

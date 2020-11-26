@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/imdb/movie2.owl#"
+     xml:base="http://www.semanticweb.org/imdb/movie2.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:movie2="http://www.semanticweb.org/imdb">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/imdb/movie2.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#has_actor_1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_actor_1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_actor_1_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_1"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#has_actor_2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_actor_2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_actor_2_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#has_actor_3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_actor_3">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_actor_3_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#has_director -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_director">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_director_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_actor_1_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_1_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_actor_2_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_2_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_actor_3_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_3_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_3"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_director_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_director_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_actor_1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_actor_2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_2"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_actor_3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_3">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_3"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_director -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_director">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Director"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#is_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#Actor_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Actor_1">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_actor_1_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#Actor_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Actor_2">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_actor_2_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#Actor_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Actor_3">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_actor_3_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Director">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#is_director_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/imdb/movie2.owl#Movie_id -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Movie_id">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#has_actor_1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#has_actor_2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#has_actor_3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Actor_3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#has_director"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/imdb/movie2.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Actor_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Actor_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Actor_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Director"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#Movie_id"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_actor_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_actor_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_actor_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#has_director"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_1_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_2_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_3_of"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_director_of"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_director"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_actor_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_director"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/imdb/movie2.owl#is_id"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
