@@ -26,7 +26,8 @@
 
 
 ## Setting up the Frontend 
--  Navigate to FrontEnd folder and run the below commands
+-  This project needs Yarn to be installed in your system which can be downloaded from here  -> https://classic.yarnpkg.com/en/docs/install/#windows-stable
+-  Once downloaded and installed succesfully, Navigate to FrontEnd folder and run the below commands
 ```
 yarn install
 ```
